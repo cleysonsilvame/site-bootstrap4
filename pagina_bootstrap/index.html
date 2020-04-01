@@ -2,81 +2,121 @@
 <html lang="PT-BR">
 
 <head>
-    <title>Aula 02 - Carousel</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="../_css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/mystyle.css">
-    <link rel="shortcut icon" href="../_img/bootstrap-icon.png">
+  <title>Aula 02 - Carousel</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="../_css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/mystyle.css">
+  <link rel="shortcut icon" href="../_img/bootstrap-icon.png">
 </head>
 
 <body>
-    <nav class="navbar navbar-fixed-top navbar-expand-lg navbar-dark bg-danger">
-        <div class="container">
-            <!-- Titulo da Navbar-->
-            <a class="navbar-brand h3 mb-0" href="#">Curso</a>
-            <!-- Botão Toggler caso o tamanho seja menor que o expand-lg -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsite">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <!-- Itens da Navbar -->
-            <div class="collapse navbar-collapse" id="navbarsite">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Início</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Perfil</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Serviços</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Depoimentos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contatos</a>
-                    </li>
-                </ul>
-                <!-- Lista para o Social da Navbar -->
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="navdrop">Social</a>
-                        <div class="dropdown-menu" id="">
-                            <a class="dropdown-item" href="#">Facebook</a>
-                            <a class="dropdown-item" href="#">Instagram</a>
-                            <a class="dropdown-item" href="#">Twitter</a>
-                        </div>
-                    </li>
-                </ul>
-                <!-- Form com input para busca e botão -->
-                <form class="form-inline">
-                    <input class="form-control ml-4 mr-2" type="search" placeholder="O que você procura?">
-                    <button class="btn" type="submit">Buscar</button>
-                </form>
-            </div>
+  <!-- Cabeçalho da página -->
+  <header>
+    <nav class="navbar navbar-fixed-top navbar-expand-lg navbar-dark">
+      <div class="container">
+        <!-- Titulo da Navbar-->
+        <a class="navbar-brand h3 mb-0" href="#">Curso</a>
+        <!-- Botão Toggler caso o tamanho seja menor que o expand-lg -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsite">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Itens da Navbar -->
+        <div class="collapse navbar-collapse" id="navbarsite">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Início</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Perfil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Serviços</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Depoimentos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contatos</a>
+            </li>
+          </ul>
+          <!-- Lista para o Social da Navbar -->
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="navdrop">Social</a>
+              <div class="dropdown-menu" id="">
+                <a class="dropdown-item" href="#">Facebook</a>
+                <a class="dropdown-item" href="#">Instagram</a>
+                <a class="dropdown-item" href="#">Twitter</a>
+              </div>
+            </li>
+          </ul>
+          <!-- Form com input para busca e botão -->
+          <form class="form-inline">
+            <input class="form-control ml-4 mr-2" type="search" placeholder="O que você procura?">
+            <button class="btn" type="submit">Buscar</button>
+          </form>
         </div>
+      </div>
     </nav>
-    <!-- ESTOU AQUI -->
-    <div id="carouselsite" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner-test">
-            <div class="carousel-item active">
-                <img src="img/slide-01.jpg" class="img-fluid d-block">
+  </header>
+  <!-- Começa contéudo principal da pagina -->
+  <main>
+    <div class="container-fluid">
+      <!-- Começo do carrossel -->
+      <div id="carouselsite" class="carousel slide" data-ride="carousel">
+        <!-- Indicadores inferios do carrossel -->
+        <ol class="carousel-indicators">
+          <li data-target="#carouselsite" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselsite" data-slide-to="0"></li>
+          <li data-target="#carouselsite" data-slide-to="0"></li>
+        </ol>
+        <!-- Imagens com texto do carrossel -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/slide-01.jpg" class="d-block w-100">
+            <div class="carousel-caption d-none d-md-block">
+              <h2>Lorem ipsum, dolor sit amet consectetur</h2>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti repudiandae ipsa temporibus
+                blanditiis laudantium est cum possimus mollitia debitis sed!</p>
             </div>
-            <div class="carousel-item">
-                <img src="img/slide-02.jpg" class="img-fluid">
+          </div>
+          <div class="carousel-item">
+            <img src="img/slide-02.jpg" class="d-block w-100">
+            <div class="carousel-caption d-none d-md-block">
+              <h2>Deleniti repudiandae ipsa temporibus blanditiis laudantium est cum possimus mollitia debitis sed!</h2>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti repudiandae ipsa temporibus
+                blanditiis laudantium est cum possimus mollitia debitis sed!</p>
             </div>
-            <div class="carousel-item">
-                <img src="img/slide-03.jpg" class="img-fluid">
+          </div>
+          <div class="carousel-item">
+            <img src="img/slide-03.jpg" class="d-block w-100">
+            <div class="carousel-caption d-none d-md-block text-dark">
+              <h2>Quis beatae non repellendus quam officia quidem animi nam nulla!</h2>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti repudiandae ipsa temporibus
+                blanditiis laudantium est cum possimus mollitia debitis sed!</p>
             </div>
+          </div>
         </div>
+        <!-- Controles do carrossel -->
+        <div>
+          <a href="#carouselsite" class="carousel-control-prev" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+          </a>
+          <a href="#carouselsite" class="carousel-control-next" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Próximo</span>
+          </a>
+        </div>
+      </div>
     </div>
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="../_js/jquery-3.4.1.min.js"></script>
-    <script src=" ../_js/umd.popper.min.js"></script>
-    <script src=" ../_js/bootstrap.min.js"></script>
+  </main>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="../_js/jquery-3.4.1.min.js"></script>
+  <script src=" ../_js/umd.popper.min.js"></script>
+  <script src=" ../_js/bootstrap.min.js"></script>
 
 </body>
 

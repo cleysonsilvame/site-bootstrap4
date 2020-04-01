@@ -1,6 +1,23 @@
-.bg-danger{
-    background-color: #941925!important;
+/* Gerais */
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+*{
+    font-family: 'Lexend Deca', sans-serif, apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 }
-.carousel-inner-test{
-    top: -40rem;
+/* Estilo da NavBar */
+.navbar{
+    background-color: #941925;
+}
+
+/* Estilos do Carrossel */
+.container-fluid{
+    padding: 0;
+}
+#carouselsite .carousel-inner .carousel-item{
+    height: 80vh;
+}
+
+#carouselsite .carousel-indicators .active{
+    background-color: #941925;
+
+}
 }
