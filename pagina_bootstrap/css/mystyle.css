@@ -12,8 +12,20 @@
 .container-fluid{
     padding: 0;
 }
-#carouselsite .carousel-inner .carousel-item{
-    height: 80vh;
+
+#carouselsite .carousel-item{
+    height: 0;
+    padding-bottom: 35%;
+}
+#carouselsite .slide02{
+    position: fixed;
+    top: 0px;
+}
+@media (min-width: 768px) {
+    #carouselsite .slide02 {
+        position: fixed;
+    top: -200px;
+  }
 }
 
 #carouselsite .carousel-indicators .active{
@@ -21,7 +33,17 @@
 
 }
 
-/* Estilos para o Scrollspy */
+/* Estilos para o Scrollspy e Titulo*/
+
+/* .main-titulo::after{ TERMINAR TRAÇO DO TITULO
+    content: "";
+    border-bottom: #333 3px solid;
+    position: absolute;
+    width: 50%;
+    top: 1.5em;
+    left: 26%;
+} */
+
 .scrollspysite{
     position: relative;
     overflow: auto;
