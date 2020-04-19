@@ -116,19 +116,26 @@
       <!-- Titulo -->
       <div class="row">
         <div class="col-12 text-center my-5">
-          <h1 class="display-3 main-titulo mb-5">
+          <!-- Titulo que exibe em escala maior -->
+          <h1 class="main-titulo display-3 mb-5 d-lg-block d-none">
             Lorem ipsum dolor sit
           </h1>
-          <p>Leveniet enim maiores recusandae minima adipisci ullam fuga vel explicabo accusantium minus vero quaerat
+          <!-- Titulo que exibe em escala menor -->
+          <h1 class="main-titulo-sm display-4 mb-5 d-lg-none d-block">
+            Lorem ipsum dolor sit
+          </h1>
+          <hr class="linha-titulo mx-5">
+          <p class="lead">Leveniet enim maiores recusandae minima adipisci ullam fuga vel explicabo accusantium minus
+            vero quaerat
             repudiandae officia molestias magnam dolor.</p>
         </div>
       </div>
       <!-- Navbar Vertical / Scrollspy -->
       <div class="row">
         <!-- Coluna com links e ref. -->
-        <!-- ARRUMAR COLUNA PARA MOBILE -->
-        <div class="col-2">
-          <nav id="navbarvertical" class="navbar p-3 pb-4">            
+        <!-- Coluna 1 - Exibe em escala maior -->
+        <div class="col-3 col-md-2 d-lg-block d-none">
+          <nav id="navbarvertical" class="navbar p-3 pb-4">
             <nav class="nav nav-pills flex-column">
               <a class="nav-link my-1" href="#item1">Item 1</a>
               <nav class="nav nav-pills flex-column">
@@ -144,29 +151,109 @@
             </nav>
           </nav>
         </div>
+        <!-- Coluna 1 - Exibe em escala menor -->
+        <div class="col-12 d-lg-none mb-3">
+          <nav id="navbarvertical" class="navbar-expand p-2 text-center">
+            <nav class="nav nav-pills d-flex flex-nowrap justify-content-center">
+              <div class="">
+                <a class="nav-link my-1" href="#item1">Item 1</a>
+                <nav class="nav nav-pills">
+                  <a class="nav-link" href="#item1-1">Item 1.1</a>
+                  <a class="nav-link" href="#item1-2">Item 1.2</a>
+                </nav>
+              </div>
+              <div class="c-left">
+                <a class="nav-link my-1" href="#item2">Item 2</a>
+              </div>
+              <div class="">
+                <a class="nav-link my-1" href="#item3">Item 3</a>
+                <nav class="nav nav-pills">
+                  <a class="nav-link" href="#item3-1">Item 3.1</a>
+                  <a class="nav-link" href="#item3-2">Item 3.2</a>
+                </nav>
+              </div>
+            </nav>
+          </nav>
+        </div>
         <!-- Coluna com texto e as ref. -->
-        <div class="col-10">
+        <div class="col-12 col-lg-10 ">
           <div data-spy="scroll" data-target="#navbarvertical" data-offset="0" class="scrollspysite">
             <h4 id="item1">Item 1</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit excepturi, dicta amet fuga adipisci placeat consequuntur esse nesciunt quibusdam unde aliquam minus deserunt id, molestias temporibus neque, laborum ab. Ipsa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis delectus impedit dolorem explicabo iusto accusantium ad inventore esse libero sapiente, nobis vitae aperiam hic omnis minima totam sint similique culpa! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia, corrupti. Dolorum earum aliquam unde soluta, voluptate facilis animi laborum deleniti pariatur autem cumque commodi ipsa veniam quidem quas a delectus! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae enim recusandae illum dolorem numquam eaque ea accusantium doloribus similique optio rerum autem consequuntur veritatis esse, dolores fuga iure sequi porro.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit excepturi, dicta amet fuga adipisci
+              placeat consequuntur esse nesciunt quibusdam unde aliquam minus deserunt id, molestias temporibus neque,
+              laborum ab. Ipsa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis delectus impedit
+              dolorem explicabo iusto accusantium ad inventore esse libero sapiente, nobis vitae aperiam hic omnis
+              minima totam sint similique culpa! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia,
+              corrupti. Dolorum earum aliquam unde soluta, voluptate facilis animi laborum deleniti pariatur autem
+              cumque commodi ipsa veniam quidem quas a delectus! Lorem, ipsum dolor sit amet consectetur adipisicing
+              elit. Vitae enim recusandae illum dolorem numquam eaque ea accusantium doloribus similique optio rerum
+              autem consequuntur veritatis esse, dolores fuga iure sequi porro.</p>
 
             <h5 id="item1-1">Item 1.1</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit excepturi, dicta amet fuga adipisci placeat consequuntur esse nesciunt quibusdam unde aliquam minus deserunt id, molestias temporibus neque, laborum ab. Ipsa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis delectus impedit dolorem explicabo iusto accusantium ad inventore esse libero sapiente, nobis vitae aperiam hic omnis minima totam sint similique culpa! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia, corrupti. Dolorum earum aliquam unde soluta, voluptate facilis animi laborum deleniti pariatur autem cumque commodi ipsa veniam quidem quas a delectus! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae enim recusandae illum dolorem numquam eaque ea accusantium doloribus similique optio rerum autem consequuntur veritatis esse, dolores fuga iure sequi porro.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit excepturi, dicta amet fuga adipisci
+              placeat consequuntur esse nesciunt quibusdam unde aliquam minus deserunt id, molestias temporibus neque,
+              laborum ab. Ipsa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis delectus impedit
+              dolorem explicabo iusto accusantium ad inventore esse libero sapiente, nobis vitae aperiam hic omnis
+              minima totam sint similique culpa! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia,
+              corrupti. Dolorum earum aliquam unde soluta, voluptate facilis animi laborum deleniti pariatur autem
+              cumque commodi ipsa veniam quidem quas a delectus! Lorem, ipsum dolor sit amet consectetur adipisicing
+              elit. Vitae enim recusandae illum dolorem numquam eaque ea accusantium doloribus similique optio rerum
+              autem consequuntur veritatis esse, dolores fuga iure sequi porro.</p>
 
-            <h5 id="item1-2">Item 2.2</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit excepturi, dicta amet fuga adipisci placeat consequuntur esse nesciunt quibusdam unde aliquam minus deserunt id, molestias temporibus neque, laborum ab. Ipsa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis delectus impedit dolorem explicabo iusto accusantium ad inventore esse libero sapiente, nobis vitae aperiam hic omnis minima totam sint similique culpa! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia, corrupti. Dolorum earum aliquam unde soluta, voluptate facilis animi laborum deleniti pariatur autem cumque commodi ipsa veniam quidem quas a delectus! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae enim recusandae illum dolorem numquam eaque ea accusantium doloribus similique optio rerum autem consequuntur veritatis esse, dolores fuga iure sequi porro.</p>
+            <h5 id="item1-2">Item 1.2</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit excepturi, dicta amet fuga adipisci
+              placeat consequuntur esse nesciunt quibusdam unde aliquam minus deserunt id, molestias temporibus neque,
+              laborum ab. Ipsa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis delectus impedit
+              dolorem explicabo iusto accusantium ad inventore esse libero sapiente, nobis vitae aperiam hic omnis
+              minima totam sint similique culpa! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia,
+              corrupti. Dolorum earum aliquam unde soluta, voluptate facilis animi laborum deleniti pariatur autem
+              cumque commodi ipsa veniam quidem quas a delectus! Lorem, ipsum dolor sit amet consectetur adipisicing
+              elit. Vitae enim recusandae illum dolorem numquam eaque ea accusantium doloribus similique optio rerum
+              autem consequuntur veritatis esse, dolores fuga iure sequi porro.</p>
 
             <h4 id="item2">Item 2</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit excepturi, dicta amet fuga adipisci placeat consequuntur esse nesciunt quibusdam unde aliquam minus deserunt id, molestias temporibus neque, laborum ab. Ipsa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis delectus impedit dolorem explicabo iusto accusantium ad inventore esse libero sapiente, nobis vitae aperiam hic omnis minima totam sint similique culpa! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia, corrupti. Dolorum earum aliquam unde soluta, voluptate facilis animi laborum deleniti pariatur autem cumque commodi ipsa veniam quidem quas a delectus! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae enim recusandae illum dolorem numquam eaque ea accusantium doloribus similique optio rerum autem consequuntur veritatis esse, dolores fuga iure sequi porro.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit excepturi, dicta amet fuga adipisci
+              placeat consequuntur esse nesciunt quibusdam unde aliquam minus deserunt id, molestias temporibus neque,
+              laborum ab. Ipsa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis delectus impedit
+              dolorem explicabo iusto accusantium ad inventore esse libero sapiente, nobis vitae aperiam hic omnis
+              minima totam sint similique culpa! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia,
+              corrupti. Dolorum earum aliquam unde soluta, voluptate facilis animi laborum deleniti pariatur autem
+              cumque commodi ipsa veniam quidem quas a delectus! Lorem, ipsum dolor sit amet consectetur adipisicing
+              elit. Vitae enim recusandae illum dolorem numquam eaque ea accusantium doloribus similique optio rerum
+              autem consequuntur veritatis esse, dolores fuga iure sequi porro.</p>
 
             <h4 id="item3">Item 3</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit excepturi, dicta amet fuga adipisci placeat consequuntur esse nesciunt quibusdam unde aliquam minus deserunt id, molestias temporibus neque, laborum ab. Ipsa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis delectus impedit dolorem explicabo iusto accusantium ad inventore esse libero sapiente, nobis vitae aperiam hic omnis minima totam sint similique culpa! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia, corrupti. Dolorum earum aliquam unde soluta, voluptate facilis animi laborum deleniti pariatur autem cumque commodi ipsa veniam quidem quas a delectus! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae enim recusandae illum dolorem numquam eaque ea accusantium doloribus similique optio rerum autem consequuntur veritatis esse, dolores fuga iure sequi porro.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit excepturi, dicta amet fuga adipisci
+              placeat consequuntur esse nesciunt quibusdam unde aliquam minus deserunt id, molestias temporibus neque,
+              laborum ab. Ipsa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis delectus impedit
+              dolorem explicabo iusto accusantium ad inventore esse libero sapiente, nobis vitae aperiam hic omnis
+              minima totam sint similique culpa! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia,
+              corrupti. Dolorum earum aliquam unde soluta, voluptate facilis animi laborum deleniti pariatur autem
+              cumque commodi ipsa veniam quidem quas a delectus! Lorem, ipsum dolor sit amet consectetur adipisicing
+              elit. Vitae enim recusandae illum dolorem numquam eaque ea accusantium doloribus similique optio rerum
+              autem consequuntur veritatis esse, dolores fuga iure sequi porro.</p>
 
             <h5 id="item3-1">Item 3.1</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit excepturi, dicta amet fuga adipisci placeat consequuntur esse nesciunt quibusdam unde aliquam minus deserunt id, molestias temporibus neque, laborum ab. Ipsa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis delectus impedit dolorem explicabo iusto accusantium ad inventore esse libero sapiente, nobis vitae aperiam hic omnis minima totam sint similique culpa! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia, corrupti. Dolorum earum aliquam unde soluta, voluptate facilis animi laborum deleniti pariatur autem cumque commodi ipsa veniam quidem quas a delectus! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae enim recusandae illum dolorem numquam eaque ea accusantium doloribus similique optio rerum autem consequuntur veritatis esse, dolores fuga iure sequi porro.</p>
-            
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit excepturi, dicta amet fuga adipisci
+              placeat consequuntur esse nesciunt quibusdam unde aliquam minus deserunt id, molestias temporibus neque,
+              laborum ab. Ipsa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis delectus impedit
+              dolorem explicabo iusto accusantium ad inventore esse libero sapiente, nobis vitae aperiam hic omnis
+              minima totam sint similique culpa! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia,
+              corrupti. Dolorum earum aliquam unde soluta, voluptate facilis animi laborum deleniti pariatur autem
+              cumque commodi ipsa veniam quidem quas a delectus! Lorem, ipsum dolor sit amet consectetur adipisicing
+              elit. Vitae enim recusandae illum dolorem numquam eaque ea accusantium doloribus similique optio rerum
+              autem consequuntur veritatis esse, dolores fuga iure sequi porro.</p>
+
             <h5 id="item3-2">Item 3.2</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit excepturi, dicta amet fuga adipisci placeat consequuntur esse nesciunt quibusdam unde aliquam minus deserunt id, molestias temporibus neque, laborum ab. Ipsa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis delectus impedit dolorem explicabo iusto accusantium ad inventore esse libero sapiente, nobis vitae aperiam hic omnis minima totam sint similique culpa! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia, corrupti. Dolorum earum aliquam unde soluta, voluptate facilis animi laborum deleniti pariatur autem cumque commodi ipsa veniam quidem quas a delectus! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae enim recusandae illum dolorem numquam eaque ea accusantium doloribus similique optio rerum autem consequuntur veritatis esse, dolores fuga iure sequi porro.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit excepturi, dicta amet fuga adipisci
+              placeat consequuntur esse nesciunt quibusdam unde aliquam minus deserunt id, molestias temporibus neque,
+              laborum ab. Ipsa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis delectus impedit
+              dolorem explicabo iusto accusantium ad inventore esse libero sapiente, nobis vitae aperiam hic omnis
+              minima totam sint similique culpa! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia,
+              corrupti. Dolorum earum aliquam unde soluta, voluptate facilis animi laborum deleniti pariatur autem
+              cumque commodi ipsa veniam quidem quas a delectus! Lorem, ipsum dolor sit amet consectetur adipisicing
+              elit. Vitae enim recusandae illum dolorem numquam eaque ea accusantium doloribus similique optio rerum
+              autem consequuntur veritatis esse, dolores fuga iure sequi porro.</p>
           </div>
         </div>
       </div>

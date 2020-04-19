@@ -35,21 +35,17 @@
 
 /* Estilos para o Scrollspy e Titulo*/
 
-/* .main-titulo::after{ TERMINAR TRAÇO DO TITULO
-    content: "";
-    border-bottom: #333 3px solid;
-    position: absolute;
-    width: 50%;
-    top: 1.5em;
-    left: 26%;
-} */
-
 .scrollspysite{
     position: relative;
     overflow: auto;
     height: 355px;
 }
+hr.linha-titulo {
+    border: solid 1px;
+    margin-top: -35px;
+}
 
+/* NavBar Vertical */
 #navbarvertical .nav-pills .nav-link.active{
   color: #fff;
   background-color: #333;
