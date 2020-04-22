@@ -45,6 +45,11 @@ hr.linha-titulo {
     margin-top: -35px;
 }
 
+.scrollspysite p{
+    text-align: justify;
+    padding: 10px;
+}
+
 /* NavBar Vertical */
 #navbarvertical .nav-pills .nav-link.active{
   color: #fff;
@@ -71,4 +76,15 @@ hr.linha-titulo {
 }
 .card-header{
     background-color: #941925;
+}
+
+
+/* Modal */
+
+.btn-danger {
+    background-color: #941925;
+}
+
+#siteModal p {
+    text-align: justify;
 }
