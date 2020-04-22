@@ -88,3 +88,14 @@ hr.linha-titulo {
 #siteModal p {
     text-align: justify;
 }
+
+/* Btn do Jumbotron */
+
+#pills-nav .nav-link {
+    color: #941925;
+}
+
+#pills-nav .active {
+    background-color: #941925;
+    color: #fff;
+}
