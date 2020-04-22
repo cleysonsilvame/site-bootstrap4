@@ -58,3 +58,17 @@ hr.linha-titulo {
 #navbarvertical{
     background-color: #941925; 
 }
+
+/* Cards */
+
+.card-link {
+    color: #941925;
+    font-weight: bold;
+}
+
+.card-link:hover {
+    color: #333;
+}
+.card-header{
+    background-color: #941925;
+}
