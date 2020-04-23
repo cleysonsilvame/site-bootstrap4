@@ -55,6 +55,10 @@ hr.linha-titulo {
     border-radius: 5px;
 }
 
+div.scrollspysite h4, div.scrollspysite h5{
+    margin-top: 40px;
+}
+
 /* NavBar Vertical */
 #navbarvertical .nav-pills .nav-link.active{
   color: #fff;
