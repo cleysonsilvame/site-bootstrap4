@@ -10,6 +10,10 @@
  - NavBar
  - Carousel
  - Scrollspy
+ - Cards
+ - Jumbotron
+ - NavPills
+ - Embed
  
  
 
