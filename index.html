@@ -460,7 +460,7 @@
           </div>
           <div class="form-row">
             <div class="form-group col-sm-12>
-              <label for="inputEnd">Seu endereço</label>
+              <label for=" inputEnd">Seu endereço</label>
               <input type="text" id="inputEnd" class="form-control" placeholder="Endereço">
             </div>
           </div>
@@ -493,12 +493,18 @@
               </div>
             </div>
           </div>
-          <div class="form-row">
-            <div class="form-group col-sm-12">
-              <button type="submit" class="btn btn-danger">
+          <div class="form-row justify-content-center">
+            <div class="form-group col-sm-6 d-flex justify-content-center">
+              <button type="submit" class="btn btn-danger flex-fill">
                 Enviar
                 <i class="fas fa-signature ml-2"></i>
               </button>
+              <a tabindex="0" class="btn btn-secondary flex-fill ml-2" role="button" data-toggle="popover" data-placement="right"
+                data-trigger="focus" title="Popup title"
+                data-content="rttitor vitae eros id, ullamcorper viverra ligula. Phasellus et massa lobortis ante lacinia porttitor eget in leo. Mauris in lorem ligula. Proin dignissim purus sit amet purus condi">
+                Ajuda
+                <i class="fas fa-hands-helping ml-2"></i>
+              </a>
             </div>
           </div>
         </div>
@@ -559,7 +565,11 @@
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/umd.popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
-
+  <script>
+    $(function () {
+      $('[data-toggle="popover"]').popover()
+    })
+  </script>
 </body>
 
 </html>
