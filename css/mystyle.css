@@ -35,6 +35,10 @@
 
 /* Estilos para o Scrollspy e Titulo*/
 
+.text-danger {
+    color: #941925 !important;
+}
+
 .scrollspysite{
     position: relative;
     overflow: auto;
