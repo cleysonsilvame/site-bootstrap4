@@ -49,6 +49,11 @@ hr.linha-titulo {
     text-align: justify;
     padding: 10px;
 }
+#scrollspy-row{
+    padding: 10px;
+    background-color: rgb(236, 236, 236);
+    border-radius: 5px;
+}
 
 /* NavBar Vertical */
 #navbarvertical .nav-pills .nav-link.active{
@@ -62,6 +67,8 @@ hr.linha-titulo {
 
 #navbarvertical{
     background-color: #941925; 
+    border-radius: 5px;
+    min-width: 157px;
 }
 
 /* Cards */
