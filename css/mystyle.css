@@ -63,10 +63,12 @@ div.scrollspysite h4, div.scrollspysite h5{
 #navbarvertical .nav-pills .nav-link.active{
   color: #fff;
   background-color: #333;
+  pointer-events: none;
 }
 
 #navbarvertical .nav-pills .nav-link{
     color: #fff; 
+    pointer-events: none;
 }
 
 #navbarvertical{
