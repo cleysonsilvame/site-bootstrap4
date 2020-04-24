@@ -14,6 +14,10 @@
  - Jumbotron
  - NavPills
  - Embed
+ - Font Awesome
+ - Formulário
+ - Popover
+ - List Group
  
  
 
